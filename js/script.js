@@ -121,3 +121,39 @@ $("#btnConfirmarPedido").click(function(){
     window.location.replace("confirmacion.html");
 
 })
+
+
+function validarCamposConfirmacion(){
+
+    if(document.getElementById("txtNit").value == ""){
+
+        alert("El campo NIT no debe estar vacio");
+        return false;
+    }
+    else if(document.getElementById("txtNombre").value == ""){
+
+        alert("El campo Nombre no debe estar vacio");
+        return false;
+    }
+    else if(document.getElementById("txtDireccion").value == ""){
+
+        alert("El campo Dirección de entrega no debe estar vacio");
+        return false;
+    }
+    else {
+        return true;
+    }
+
+}
+
+
+
+$("#btnGuardarConfirmarPedido").click(function(){
+
+    if(validarCamposConfirmacion() == false){
+        return false;
+    }
+
+    alert("Su pedido se ha confirmado exitosamente.");
+
+})
