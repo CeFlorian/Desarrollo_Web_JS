@@ -125,7 +125,7 @@ $("#btnConfirmarPedido").click(function(){
 
 function validarCamposConfirmacion(){
 
-    else if(document.getElementById("txtNombre").value == ""){
+    if(document.getElementById("txtNombre").value == ""){
 
         alert("El campo Nombre no debe estar vacio");
         return false;
