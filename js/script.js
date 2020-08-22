@@ -125,11 +125,6 @@ $("#btnConfirmarPedido").click(function(){
 
 function validarCamposConfirmacion(){
 
-    if(document.getElementById("txtNit").value == ""){
-
-        alert("El campo NIT no debe estar vacio");
-        return false;
-    }
     else if(document.getElementById("txtNombre").value == ""){
 
         alert("El campo Nombre no debe estar vacio");
